@@ -1,0 +1,22 @@
+# toss-bug-bounty
+
+토스 버그바운티 실무 운영을 위한 한국어 문서/템플릿 모음입니다.
+
+## 문서 구성
+- `TOSS_BUG_BOUNTY_RUNBOOK_KR.md`: 전체 실행 런북
+- `docs/CHECKLIST_KR.md`: 기능별 테스트 체크리스트
+- `docs/REPORT_TEMPLATE_KR.md`: 제보 보고서 템플릿
+- `docs/DAILY_LOG_TEMPLATE_KR.md`: 일일 테스트 로그 템플릿
+
+## 빠른 시작
+1. `TOSS_BUG_BOUNTY_RUNBOOK_KR.md`의 `0) 전제와 운영 원칙`부터 확인
+2. Burp에서 `User-Agent credential` 고정 규칙 적용
+3. `docs/CHECKLIST_KR.md`로 기능별 수동 검증 수행
+4. 발견 이슈는 `docs/REPORT_TEMPLATE_KR.md`로 즉시 정리
+
+## 운영 원칙 요약
+- 실제 피해 유발 금지, 가능성만 안전하게 증명
+- SSRF는 `http://bugbounty.toss.sb`로만 검증
+- 금액변조는 100원으로만 검증
+- 과도한 자동화/스캐닝/부하 유발 금지
+- 취득 정보 비밀 유지
