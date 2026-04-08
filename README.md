@@ -19,6 +19,7 @@
 - `findings/2026-04-14_DAY7_LOG_KR.md`: Day 7 실행 로그 초안
 - `findings/FINDING_CARD_TEMPLATE_KR.md`: 취약점 카드 템플릿
 - `evidence/README.md`: 증거 폴더 구조/파일명 규칙
+- `evidence/DAY1_DAY7_STRUCTURE_KR.md`: Day1~Day7 실폴더 구성 안내
 
 ## 빠른 시작
 1. `TOSS_BUG_BOUNTY_RUNBOOK_KR.md`의 `0) 전제와 운영 원칙`부터 확인
