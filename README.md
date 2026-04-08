@@ -8,9 +8,12 @@
 - `docs/REPORT_TEMPLATE_KR.md`: 제보 보고서 템플릿
 - `docs/DAILY_LOG_TEMPLATE_KR.md`: 일일 테스트 로그 템플릿
 - `docs/POC_PLAYBOOK_KR.md`: 취약점 유형별 안전 검증 PoC 플레이북
+- `docs/samples/`: 제출 직전 참고용 샘플 제보서
 - `findings/README.md`: 이슈 트래킹 운영 규칙
 - `findings/2026-04-08_DAY1_LOG_KR.md`: Day 1 실행 로그 초안
+- `findings/2026-04-09_DAY2_LOG_KR.md`: Day 2 실행 로그 초안
 - `findings/FINDING_CARD_TEMPLATE_KR.md`: 취약점 카드 템플릿
+- `evidence/README.md`: 증거 폴더 구조/파일명 규칙
 
 ## 빠른 시작
 1. `TOSS_BUG_BOUNTY_RUNBOOK_KR.md`의 `0) 전제와 운영 원칙`부터 확인
@@ -18,6 +21,7 @@
 3. `docs/CHECKLIST_KR.md`로 기능별 수동 검증 수행
 4. 발견 이슈는 `docs/REPORT_TEMPLATE_KR.md`로 즉시 정리
 5. 후보 이슈는 `findings/FINDING_CARD_TEMPLATE_KR.md`로 카드화해 우선순위 관리
+6. 제출 직전에는 `docs/samples/`로 문장/구조 최종 점검
 
 ## 운영 원칙 요약
 - 실제 피해 유발 금지, 가능성만 안전하게 증명
