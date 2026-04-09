@@ -1,62 +1,47 @@
-# 최종 제출 패키지 (완성본 샘플) - SSRF
-
-## 제목
-[SSRF] URL 미리보기 기능에서 서버측 외부 요청 수행 가능
+# 취약점 제보서(폼 양식 맞춤) - SSRF 샘플
 
 ## 취약점 유형
-- SSRF 가능성
+SSRF
 
-## 대상 URL/API
-- Method: `POST`
-- Endpoint: `/api/v1/link/preview`
-- 앱/웹 버전: `모바일 앱 vX.Y.Z`
+## 대상
+https://tosscx.com
+
+## 취약점 제목
+URL 미리보기 기능에서 서버측 외부 요청 수행 가능성
 
 ## 공격 환경
-- 테스트 일시: `2026-04-11 14:50 KST`
-- 테스트 계정: A
-- User-Agent(credential 고정): 적용 확인
-- 프록시/Burp 사용 여부: 사용
+웹/앱 URL 미리보기 기능, 테스트 계정 A, Burp Suite 사용, User-Agent credential 고정.  
+테스트 일시: 2026-04-11 14:50 KST.
 
-## 전제조건
-- 로그인 세션 필요
-- 안전 검증 규칙 준수(`http://bugbounty.toss.sb` 한정)
+## 취약점 설명 및 발생원인
+URL 미리보기 API(`POST /api/v1/link/preview`)에 입력된 URL을 서버가 처리하는 과정에서 외부 요청 수행 정황이 확인되었습니다.  
+검증은 정책에 맞게 `http://bugbounty.toss.sb`로만 진행했습니다.
 
-## 재현 절차
-1. 정상 URL 요청(`URL-BASELINE-051`)으로 기준 응답을 확보합니다.
-2. 동일 요청의 `url` 파라미터를 `http://bugbounty.toss.sb`로 변경해 단건 전송합니다.
+재현 절차:
+1. 정상 URL로 기준 요청(`URL-BASELINE-051`)을 전송합니다.
+2. 동일 요청의 `url` 파라미터를 `http://bugbounty.toss.sb`로 변경해 단건 전송합니다(`URL-SSRF-052`).
 3. 응답/로그를 비교해 서버측 요청 처리 정황을 확인합니다.
 
-## 실제 결과
-- 검증 도메인 기준으로 서버측 외부 요청 수행 정황이 확인됩니다.
+실제 결과:
+- 검증 도메인 기준으로 서버측 외부 요청 수행 정황 확인.
 
-## 기대 결과
-- 외부 요청이 필요한 기능이라면 허용 대상/스킴/리다이렉트 정책을 엄격히 제한해야 하며,
-- 불필요한 외부 요청은 차단되어야 합니다.
+기대 결과:
+- 외부 요청이 필요한 기능이라도 목적지/스킴/리다이렉트 제한이 강제되어야 하며,
+- 불필요한 외부 요청은 차단되어야 함.
 
-## 파급력
-- 내부 자원 대상으로 요청이 확장될 경우 정보 노출/접근 우회 가능성
+발생원인 추정:
+- URL 입력값 검증 및 목적지 제한(allowlist) 정책 미흡.
 
-## 발생 원인 추정
-- URL 입력값 검증/목적지 제한 정책 부족
+## 취약점 파급력
+입력 URL 처리 로직이 내부 자원 대상으로 확장될 경우 정보 노출 또는 우회 접근 위험이 있습니다.  
+특히 URL 처리 기능은 공통 컴포넌트로 재사용되는 경우 영향 범위가 넓어질 수 있습니다.
 
-## 대응방안
-- 목적지 allowlist 적용
-- 사설대역/메타데이터 주소 차단
-- 리다이렉트/프로토콜 제한 및 재검증
+## 취약점 대응방안
+목적지 allowlist, 사설대역/메타데이터 주소 차단, 리다이렉트 제한을 적용해야 합니다.  
+또한 DNS 재검증 및 프로토콜 제한(예: http/https만 허용)을 적용해 우회 가능성을 줄여야 합니다.
 
-## 증거 맵
-- 요청/응답:
-  - `evidence/2026-04-11/url_input/reqres/1311_url_preview_ssrf_probe.txt`
-  - `evidence/2026-04-11/url_input/reqres/1312_url_preview_compare.txt`
-- 스크린샷:
-  - `evidence/2026-04-11/url_input/screens/1313_url_preview_result.png`
-- 실행 로그:
-  - `findings/2026-04-11_DAY4_LOG_KR.md`
-- 후보 카드:
-  - `findings/2026-04-11_SSRF_URL_PREVIEW_TRIAGE_SAMPLE.md`
-
-## 제출 전 체크
-- [x] User-Agent credential 고정 사용
-- [x] SSRF 검증 도메인 정책 준수(`bugbounty.toss.sb`)
-- [x] 자동화 대량 요청 미사용
-- [x] 실제 피해 유발 동작 미수행
+## 첨부파일
+- `evidence/2026-04-11/url_input/reqres/1311_url_preview_ssrf_probe.txt`
+- `evidence/2026-04-11/url_input/reqres/1312_url_preview_compare.txt`
+- `evidence/2026-04-11/url_input/screens/1313_url_preview_result.png`
+- `findings/2026-04-11_DAY4_LOG_KR.md`
