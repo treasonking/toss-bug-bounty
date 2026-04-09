@@ -20,6 +20,8 @@
 - `findings/FINDING_CARD_TEMPLATE_KR.md`: 취약점 카드 템플릿
 - `evidence/README.md`: 증거 폴더 구조/파일명 규칙
 - `evidence/DAY1_DAY7_STRUCTURE_KR.md`: Day1~Day7 실폴더 구성 안내
+- `evidence/*/DAY_SUMMARY.md`: 날짜별 요약 템플릿
+- `evidence/*/*/notes/NOTE_TEMPLATE.md`: 기능별 메모 템플릿
 
 ## 빠른 시작
 1. `TOSS_BUG_BOUNTY_RUNBOOK_KR.md`의 `0) 전제와 운영 원칙`부터 확인
