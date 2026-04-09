@@ -12,6 +12,7 @@
 - `findings/README.md`: 이슈 트래킹 운영 규칙
 - `findings/2026-04-08_DAY1_LOG_KR.md`: Day 1 실행 로그 초안
 - `findings/2026-04-09_DAY2_LOG_KR.md`: Day 2 실행 로그 초안
+- `findings/2026-04-09_IDOR_profile_TRIAGE_SAMPLE.md`: Day 2 기반 샘플 finding 카드
 - `findings/2026-04-10_DAY3_LOG_KR.md`: Day 3 실행 로그 초안
 - `findings/2026-04-11_DAY4_LOG_KR.md`: Day 4 실행 로그 초안
 - `findings/2026-04-12_DAY5_LOG_KR.md`: Day 5 실행 로그 초안
