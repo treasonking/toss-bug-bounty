@@ -1,4 +1,11 @@
-Placeholder artifact file.
-Created to match submission attachment path.
-Relative path: evidence/2026-04-11/url_input/reqres/1311_url_preview_ssrf_probe.txt
-Created at: 2026-04-09 17:14:44 +09:00
+POST /api/v1/link/preview HTTP/1.1
+Host: api.example
+Authorization: Bearer <A_SESSION_TOKEN>
+User-Agent: <BUGBOUNTY_CREDENTIAL_UA>
+Content-Type: application/json
+
+{"url":"http://bugbounty.toss.sb"}
+
+---
+Purpose:
+- Safe SSRF verification with approved domain only

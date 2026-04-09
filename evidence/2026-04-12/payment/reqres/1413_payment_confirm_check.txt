@@ -1,4 +1,12 @@
-Placeholder artifact file.
-Created to match submission attachment path.
-Relative path: evidence/2026-04-12/payment/reqres/1413_payment_confirm_check.txt
-Created at: 2026-04-09 17:14:44 +09:00
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "orderId": "ORD-1001",
+  "amount": 10,
+  "status": "confirmed"
+}
+
+---
+Expected:
+- Server should reject or recalculate tampered values

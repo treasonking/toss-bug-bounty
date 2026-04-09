@@ -1,4 +1,13 @@
-Placeholder artifact file.
-Created to match submission attachment path.
-Relative path: evidence/2026-04-11/url_input/reqres/1312_url_preview_compare.txt
-Created at: 2026-04-09 17:14:44 +09:00
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "url": "http://bugbounty.toss.sb",
+  "previewTitle": "sample",
+  "status": "fetched"
+}
+
+---
+Comparison:
+- Baseline URL preview response captured
+- Probe response behavior recorded

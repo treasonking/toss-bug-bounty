@@ -1,4 +1,12 @@
-Placeholder artifact file.
-Created to match submission attachment path.
-Relative path: evidence/2026-04-09/profile/reqres/1111_profile_read_idor_resp_B.txt
-Created at: 2026-04-09 17:14:44 +09:00
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "userId": "A12345",
+  "nickname": "sample_user_a",
+  "maskedPhone": "010-****-1234"
+}
+
+---
+Expected:
+- 403/404 for non-owner account access

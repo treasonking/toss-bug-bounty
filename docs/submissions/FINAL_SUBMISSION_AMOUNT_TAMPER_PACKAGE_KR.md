@@ -43,5 +43,5 @@ https://www.tosspayments.com
 ## 첨부파일
 - `evidence/2026-04-12/payment/reqres/1411_payment_amount_tamper.txt`
 - `evidence/2026-04-12/payment/reqres/1413_payment_confirm_check.txt`
-- `evidence/2026-04-12/payment/screens/1414_payment_tamper_result.png`
 - `findings/2026-04-12_DAY5_LOG_KR.md`
+- (실제 캡처 파일 추가 필요) `evidence/2026-04-12/payment/screens/<actual_screenshot>.png`

@@ -1,4 +1,11 @@
-Placeholder artifact file.
-Created to match submission attachment path.
-Relative path: evidence/2026-04-09/profile/reqres/1110_profile_read_idor_B.txt
-Created at: 2026-04-09 17:14:44 +09:00
+GET /api/v1/profile/A12345 HTTP/1.1
+Host: api.example
+Authorization: Bearer <B_SESSION_TOKEN>
+User-Agent: <BUGBOUNTY_CREDENTIAL_UA>
+Accept: application/json
+
+---
+Note:
+- Baseline owner account: A
+- Request executed with non-owner account: B
+- Purpose: IDOR/BOLA verification

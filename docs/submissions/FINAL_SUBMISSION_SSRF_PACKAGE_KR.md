@@ -45,5 +45,5 @@ URL 미리보기 API(`POST /api/v1/link/preview`)에 입력된 URL을 서버가 
 ## 첨부파일
 - `evidence/2026-04-11/url_input/reqres/1311_url_preview_ssrf_probe.txt`
 - `evidence/2026-04-11/url_input/reqres/1312_url_preview_compare.txt`
-- `evidence/2026-04-11/url_input/screens/1313_url_preview_result.png`
 - `findings/2026-04-11_DAY4_LOG_KR.md`
+- (실제 캡처 파일 추가 필요) `evidence/2026-04-11/url_input/screens/<actual_screenshot>.png`

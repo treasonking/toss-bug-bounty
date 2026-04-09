@@ -44,5 +44,5 @@ https://tossbank.com
 ## 첨부파일
 - `evidence/2026-04-09/profile/reqres/1110_profile_read_idor_B.txt`
 - `evidence/2026-04-09/profile/reqres/1111_profile_read_idor_resp_B.txt`
-- `evidence/2026-04-09/profile/screens/1112_profile_idor_result_B.png`
 - `findings/2026-04-09_DAY2_LOG_KR.md`
+- (실제 캡처 파일 추가 필요) `evidence/2026-04-09/profile/screens/<actual_screenshot>.png`
