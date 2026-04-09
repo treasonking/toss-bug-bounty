@@ -10,7 +10,7 @@ https://www.tosspayments.com
 결제 생성/확정 단계 금액 무결성 검증 미흡 가능성
 
 ## 공격 환경
-결제 API / 계정 A / Burp Repeater / UA credential 고정 / 2026-04-12 16:10 KST / 100원 정책 준수
+결제API/계정A/Burp/100원
 
 ## 공격 페이로드
 `amount=100 -> amount=10` 또는 `fee=0` (단건 변조 비교)

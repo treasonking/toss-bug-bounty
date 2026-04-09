@@ -10,7 +10,7 @@ https://tossbank.com
 프로필 조회 API에서 타 사용자 정보 조회 가능 (IDOR/BOLA)
 
 ## 공격 환경
-Android 앱 vX.Y.Z / 계정 A,B / Burp Repeater / UA credential 고정 / 2026-04-09 11:40 KST
+모바일앱/계정A,B/Burp
 
 ## 공격 페이로드
 `GET /api/v1/profile/A12345` 를 계정 B 세션으로 호출

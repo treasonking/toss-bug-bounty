@@ -10,7 +10,7 @@ https://tosscx.com
 URL 미리보기 기능에서 서버측 외부 요청 수행 가능성
 
 ## 공격 환경
-웹 URL 미리보기 / 계정 A / Burp Repeater / UA credential 고정 / 2026-04-11 14:50 KST
+웹 URL미리보기/계정A/Burp
 
 ## 공격 페이로드
 `url=http://bugbounty.toss.sb`

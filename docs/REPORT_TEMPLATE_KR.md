@@ -19,14 +19,16 @@
 - 
 
 ## 공격 환경
-- (한 줄 요약, 500자 이하 권장)
-- 예: `Android vX.Y.Z / 계정 A,B / Burp Repeater / UA credential 고정 / 2026-04-09 11:40 KST`
+- (아주 짧게 한 줄, 30자 내외 권장)
+- 예: `웹 URL미리보기/계정A/Burp`
+- 예: `모바일앱/계정A,B/Burp`
 
 ## 공격 페이로드
-- (요청에서 실제로 변경/주입한 값)
-- 예: `url=http://bugbounty.toss.sb`
-- 예: `GET /api/v1/profile/A12345` (B 세션으로 호출)
-- 예: `amount=100 -> amount=10` 또는 `fee=0`
+- (요청에서 실제로 변경/주입한 값, 최대 500자)
+- 여러 줄로 작성 가능:
+  - `url=http://bugbounty.toss.sb`
+  - `GET /api/v1/profile/A12345` (B 세션)
+  - `amount=100 -> amount=10`, `fee=0`
 
 ## 취약점 설명 및 발생원인
 1. 재현 절차 1
