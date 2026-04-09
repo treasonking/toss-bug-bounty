@@ -10,8 +10,10 @@ https://www.tosspayments.com
 결제 생성/확정 단계 금액 무결성 검증 미흡 가능성
 
 ## 공격 환경
-결제 API 테스트 환경, 테스트 계정 A, Burp Suite Repeater 사용, User-Agent credential 고정.  
-테스트 일시: 2026-04-12 16:10 KST, 정책 준수를 위해 100원 테스트만 수행.
+결제 API / 계정 A / Burp Repeater / UA credential 고정 / 2026-04-12 16:10 KST / 100원 정책 준수
+
+## 공격 페이로드
+`amount=100 -> amount=10` 또는 `fee=0` (단건 변조 비교)
 
 ## 취약점 설명 및 발생원인
 결제 생성/확정 API에서 클라이언트 전달 `amount`/`fee` 값에 대한 서버 재검증이 약해 보이는 정황이 확인되었습니다.

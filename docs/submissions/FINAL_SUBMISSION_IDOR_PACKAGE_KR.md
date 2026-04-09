@@ -10,8 +10,10 @@ https://tossbank.com
 프로필 조회 API에서 타 사용자 정보 조회 가능 (IDOR/BOLA)
 
 ## 공격 환경
-모바일 앱 vX.Y.Z, 테스트 계정 A/B, Burp Suite Repeater 사용, User-Agent credential 고정.  
-테스트 일시: 2026-04-09 11:40 KST.
+Android 앱 vX.Y.Z / 계정 A,B / Burp Repeater / UA credential 고정 / 2026-04-09 11:40 KST
+
+## 공격 페이로드
+`GET /api/v1/profile/A12345` 를 계정 B 세션으로 호출
 
 ## 취약점 설명 및 발생원인
 프로필 조회 API(`GET /api/v1/profile/{userId}`)에서 요청 주체와 객체 소유자 매핑 검증이 약해 보이는 정황이 확인되었습니다.  

@@ -10,8 +10,10 @@ https://tosscx.com
 URL 미리보기 기능에서 서버측 외부 요청 수행 가능성
 
 ## 공격 환경
-웹/앱 URL 미리보기 기능, 테스트 계정 A, Burp Suite 사용, User-Agent credential 고정.  
-테스트 일시: 2026-04-11 14:50 KST.
+웹 URL 미리보기 / 계정 A / Burp Repeater / UA credential 고정 / 2026-04-11 14:50 KST
+
+## 공격 페이로드
+`url=http://bugbounty.toss.sb`
 
 ## 취약점 설명 및 발생원인
 URL 미리보기 API(`POST /api/v1/link/preview`)에 입력된 URL을 서버가 처리하는 과정에서 외부 요청 수행 정황이 확인되었습니다.  

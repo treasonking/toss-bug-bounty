@@ -19,11 +19,14 @@
 - 
 
 ## 공격 환경
-- 테스트 일시:
-- 테스트 계정:
-- 앱/웹 버전:
-- User-Agent(credential 고정):
-- 프록시 도구:
+- (한 줄 요약, 500자 이하 권장)
+- 예: `Android vX.Y.Z / 계정 A,B / Burp Repeater / UA credential 고정 / 2026-04-09 11:40 KST`
+
+## 공격 페이로드
+- (요청에서 실제로 변경/주입한 값)
+- 예: `url=http://bugbounty.toss.sb`
+- 예: `GET /api/v1/profile/A12345` (B 세션으로 호출)
+- 예: `amount=100 -> amount=10` 또는 `fee=0`
 
 ## 취약점 설명 및 발생원인
 1. 재현 절차 1
