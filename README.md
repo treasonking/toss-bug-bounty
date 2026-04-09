@@ -10,6 +10,8 @@
 - `docs/POC_PLAYBOOK_KR.md`: 취약점 유형별 안전 검증 PoC 플레이북
 - `docs/samples/`: 제출 직전 참고용 샘플 제보서
 - `docs/submissions/FINAL_SUBMISSION_IDOR_PACKAGE_KR.md`: 실제 제출용 완성본 샘플
+- `docs/submissions/FINAL_SUBMISSION_SSRF_PACKAGE_KR.md`: 실제 제출용 완성본 샘플(SSRF)
+- `docs/submissions/FINAL_SUBMISSION_AMOUNT_TAMPER_PACKAGE_KR.md`: 실제 제출용 완성본 샘플(금액변조)
 - `findings/README.md`: 이슈 트래킹 운영 규칙
 - `findings/2026-04-08_DAY1_LOG_KR.md`: Day 1 실행 로그 초안
 - `findings/2026-04-09_DAY2_LOG_KR.md`: Day 2 실행 로그 초안
