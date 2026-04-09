@@ -13,6 +13,7 @@
 - `docs/submissions/FINAL_SUBMISSION_SSRF_PACKAGE_KR.md`: 실제 제출용 완성본 샘플(SSRF)
 - `docs/submissions/FINAL_SUBMISSION_AMOUNT_TAMPER_PACKAGE_KR.md`: 실제 제출용 완성본 샘플(금액변조)
 - `docs/CAPTURE_AUTOMATION_KR.md`: 제보 화면 자동 캡처 실행 가이드
+- `docs/CAPTURE_SSRF_EVIDENCE_KR.md`: SSRF 증거 자동 수집 가이드
 - `findings/README.md`: 이슈 트래킹 운영 규칙
 - `findings/2026-04-08_DAY1_LOG_KR.md`: Day 1 실행 로그 초안
 - `findings/2026-04-09_DAY2_LOG_KR.md`: Day 2 실행 로그 초안
